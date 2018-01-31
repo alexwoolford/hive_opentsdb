@@ -63,7 +63,6 @@ class HiveOpenTSDB:
                                                                                                           row_dict.get(value_column),
                                                                                                           epoch_millis,
                                                                                                           tags_string)
-                    self.metrics.send("totalcapacitygb", 8575.0, timestamp=1.493728796e+12, tier="0", hostname="den2s1pure0100", vendor="pure", location="den2")
 
                     eval(metrics_send_command)
             except:
